@@ -188,5 +188,6 @@ Keys starting with `lv_test_` work with test data, kept apart from live data (`l
 ## Links
 
 - Docs: https://leadveyor.com/docs/sdk/php
+- Other languages: [TypeScript](https://www.npmjs.com/package/@leadveyor/sdk) · [Python](https://github.com/leadveyor/leadveyor-python)
 - API reference: https://leadveyor.com/docs/inbounds
 - Support: support@leadveyor.com
