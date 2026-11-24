@@ -1,5 +1,7 @@
 # Leadveyor SDK for PHP
 
+[![Packagist](https://img.shields.io/packagist/v/leadveyor/leadveyor-php)](https://packagist.org/packages/leadveyor/leadveyor-php) [![Tests](https://github.com/leadveyor/leadveyor-php/actions/workflows/tests.yml/badge.svg)](https://github.com/leadveyor/leadveyor-php/actions/workflows/tests.yml)
+
 Official client for the [Leadveyor API](https://leadveyor.com/docs/api): send messages, get scored leads, manage profiles, sources and webhooks. PHP 8.1+, no dependencies besides `ext-curl` and `ext-json`.
 
 ```bash
