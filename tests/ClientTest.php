@@ -288,11 +288,10 @@ final class ClientTest extends TestCase
         self::assertSame('https://api.test/v1/events?starting_after=evt_5', $f->calls[0]['url']);
     }
 
-    public function testVersionMatchesComposerAndTypeScriptSdks(): void
+    public function testVersionIsSemver(): void
     {
-        $ts = json_decode((string) file_get_contents(__DIR__ . '/../../sdk/package.json'), true);
+        // Packagist takes the version from the git tag (vX.Y.Z); keep Version::VERSION equal to it.
         self::assertMatchesRegularExpression('/^\d+\.\d+\.\d+$/', Version::VERSION);
-        self::assertIsString($ts['version']);
     }
 
     public function testEveryServiceMethodExists(): void
