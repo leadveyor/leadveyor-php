@@ -40,6 +40,7 @@ class Leadveyor extends BaseClient
     public readonly Service\EventsService $events;
     public readonly Service\BillingService $billing;
     public readonly Service\UsageService $usage;
+    public readonly Service\AlertsService $alerts;
 
     /**
      * @param string|ClientOptions|null $apiKeyOrOptions `lv_live_…` / `lv_test_…`, or the options array. Default: LEADVEYOR_API_KEY.
@@ -66,6 +67,7 @@ class Leadveyor extends BaseClient
         $this->events = new Service\EventsService($this);
         $this->billing = new Service\BillingService($this);
         $this->usage = new Service\UsageService($this);
+        $this->alerts = new Service\AlertsService($this);
     }
 
     /** A client with the same settings that sends every request to `$workspace` (account-wide keys, agencies). */
