@@ -31,6 +31,8 @@ class Leadveyor extends BaseClient
     public readonly Service\CrmService $crm;
     public readonly Service\HubspotService $hubspot;
     public readonly Service\PipedriveService $pipedrive;
+    public readonly Service\ZohoService $zoho;
+    public readonly Service\SalesforceService $salesforce;
     public readonly Service\PlacesService $places;
     public readonly Service\InboundsService $inbounds;
     public readonly Service\LeadsService $leads;
@@ -58,6 +60,8 @@ class Leadveyor extends BaseClient
         $this->crm = new Service\CrmService($this);
         $this->hubspot = new Service\HubspotService($this);
         $this->pipedrive = new Service\PipedriveService($this);
+        $this->zoho = new Service\ZohoService($this);
+        $this->salesforce = new Service\SalesforceService($this);
         $this->places = new Service\PlacesService($this);
         $this->inbounds = new Service\InboundsService($this);
         $this->leads = new Service\LeadsService($this);
